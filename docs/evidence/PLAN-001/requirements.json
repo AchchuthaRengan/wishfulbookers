@@ -121,13 +121,14 @@
         "docs/evidence/PLAN-001/test-results/direct-verify-full.log",
         "docs/evidence/PLAN-001/test-results/staged-index-regression-green.log",
         "docs/evidence/PLAN-001/test-results/git-cached-diff-check.log",
+        "docs/evidence/PLAN-001/test-results/hosted-ci-run-29481673124.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
       ],
-      "notes": "Round 5 independently passed the repaired full lane, 55-test suite, and staged-index regression locally; hosted CI and final closure remain pending."
+      "notes": "Round 5 independently passed the 55-test baseline locally. The focused hosted-CI repair passes a 56-test writer run but remains NOT_PROVEN pending independent review, hosted rerun, and final closure."
     },
     {
       "requirementId": "HARNESS-VER-004",
@@ -137,13 +138,14 @@
       "verificationIds": ["CMD-019"],
       "evidencePaths": [
         "docs/evidence/PLAN-001/test-results/direct-verify-full.log",
+        "docs/evidence/PLAN-001/test-results/hosted-ci-run-29481673124.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
         "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
       ],
-      "notes": "CI policy passed locally; the first hosted Actions run remains unproven."
+      "notes": "Hosted run 29481673124 failed before the full lane because the pnpm shim was unavailable; the focused repair remains NOT_PROVEN pending independent review and rerun."
     }
   ]
 }

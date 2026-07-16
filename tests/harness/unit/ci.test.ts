@@ -40,4 +40,27 @@ describe("CI policy", () => {
     expect(codes).toContain("CI_TRIGGER_INVALID");
     expect(codes).toContain("CI_ACTION_UNPINNED");
   });
+
+  it("rejects a workflow that does not enable the pnpm shim", () => {
+    const root = mkdtempSync(join(tmpdir(), "navlands-ci-"));
+    temporary.push(root);
+    const directory = join(root, ".github", "workflows");
+    mkdirSync(directory, { recursive: true });
+    const source = readFileSync(
+      join(process.cwd(), ".github", "workflows", "verify.yml"),
+      "utf8",
+    );
+    writeFileSync(
+      join(directory, "verify.yml"),
+      source.replace(
+        / {6}- name: Enable pnpm shim\r?\n {8}run: corepack enable pnpm\r?\n/u,
+        "",
+      ),
+    );
+
+    expect(validateCi(root).issues).toContainEqual({
+      code: "CI_COMMAND_MISSING",
+      message: "Missing exact CI command: corepack enable pnpm",
+    });
+  });
 });

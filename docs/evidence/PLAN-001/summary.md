@@ -16,8 +16,9 @@ Implemented the private Node/TypeScript repository harness only: approved-plan
 preflight, scope and secret controls, requirement traceability, native Codex
 roles/hooks, six project-local skills, evidence tooling, deterministic test
 lanes, and zero-spend pull-request CI policy. Round 5 independently confirmed
-the round-4 repair locally. Hosted Actions and final closure remain pending, so
-the durable verdict remains `NOT_PROVEN`.
+the round-4 repair locally. The first hosted run then failed before install
+because the pnpm shim was unavailable; a focused repair is pending independent
+review and rerun. The durable verdict remains `NOT_PROVEN`.
 
 ## Scoped changes
 
@@ -29,14 +30,17 @@ deployment artifact was created.
 
 ## Acceptance result
 
-Direct pnpm formatting, lint, strict typecheck, 34 unit cases, 21 integration
-cases, 55 combined cases, harness compilation, six external skill validations,
-and the plan/scope/secret/requirement/agent/hook/evidence/CI validators passed
-locally. A focused 9-case scope regression includes the staged-index/worktree
-divergence from round 4. The complete fast and full deterministic lanes also
-passed; raw stdout/stderr, exit codes, durations, and redaction declarations
-are persisted under `test-results/`. Results remain writer evidence until
-independently rerun.
+The independently reviewed round-5 ledger records 34 unit cases, 21 integration
+cases, and 55 combined cases. The focused hosted-CI repair adds one unit
+regression; its writer run passed 35 unit cases and the unchanged 21 integration
+cases, for 56 combined cases. Formatting, lint, strict typecheck, harness
+compilation, six external skill validations, and the
+plan/scope/secret/requirement/agent/hook/evidence/CI validators passed locally.
+A focused 9-case scope regression includes the staged-index/worktree divergence
+from round 4. The 27 round-5 raw command artifacts remain intact, and the
+focused repair results are recorded with the hosted failure under
+`test-results/`. The repair results require fresh independent review and hosted
+rerun.
 
 ## Manual/user-flow evidence
 
@@ -80,10 +84,16 @@ Independent verification round 5 passed the repaired staged-index enforcement,
 the 55-test suite, the Stop-hook matrix, scope, safety, and evidence checks
 locally. Its exact report is retained under `test-results/`; it does not prove
 the first hosted Actions run.
+Hosted Actions run 29481673124 failed in `Install frozen dependencies` with
+`pnpm: command not found`, exit 127, after Corepack prepare completed; the full
+lane was skipped. The focused workflow and validator repair adds explicit pnpm
+shim enablement and remains pending independent review and hosted rerun. The
+hosted failure record is retained under `test-results/`.
 
 ## Final verification
 
 Rounds 1, 2, and 4 failed; rounds 3 and 5 passed locally. The first hosted
-GitHub Actions run and final founder closure remain pending. Local results do
-not set requirement statuses to `PASS`, mark Plan 001 `COMPLETED`, or change
-the overall `NOT_PROVEN` verdict.
+GitHub Actions run failed before the full lane, and its focused repair requires
+fresh independent review and a hosted rerun. Final founder closure remains
+pending. Local results do not set requirement statuses to `PASS`, mark Plan 001
+`COMPLETED`, or change the overall `NOT_PROVEN` verdict.

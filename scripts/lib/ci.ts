@@ -91,6 +91,7 @@ export function validateCi(root: string): ValidationResult {
     step.run === undefined ? [] : [step.run],
   );
   for (const required of [
+    "corepack enable pnpm",
     "corepack prepare pnpm@11.9.0 --activate",
     "pnpm install --frozen-lockfile",
     "pnpm verify:full -- --plan PLAN-001",
