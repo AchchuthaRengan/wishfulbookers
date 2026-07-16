@@ -1,0 +1,10 @@
+COMMAND: "pnpm" "typecheck"
+STARTED_AT_UTC: 2026-07-16T07:26:26.195Z
+STDOUT:
+
+STDERR:
+$ tsc --noEmit -p tsconfig.json
+
+EXIT_CODE: 0
+DURATION_MS: 2597
+REDACTIONS: NONE

@@ -1,0 +1,32 @@
+COMMAND: "git" "diff" "--check"
+STARTED_AT_UTC: 2026-07-16T07:30:42.245Z
+STDOUT:
+
+STDERR:
+warning: in the working copy of '.prettierignore', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-build-harness.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-format-check.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-format-write.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-install-frozen.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-integration.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-lint.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-pnpm-version.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-preflight-implement.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-scope.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-test-all.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-typecheck.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-unit.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/direct-validate-hooks.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/external-skill-navlands-data-model.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/external-skill-navlands-frontend-taste.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/external-skill-navlands-plan.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/external-skill-navlands-playground.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/external-skill-navlands-security.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/external-skill-navlands-verify.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'docs/evidence/PLAN-001/test-results/stop-hook-regression-green.log', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'scripts/lib/git.ts', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'tests/harness/integration/scope-git.test.ts', LF will be replaced by CRLF the next time Git touches it
+
+EXIT_CODE: 0
+DURATION_MS: 70
+REDACTIONS: NONE

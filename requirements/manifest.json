@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "goalCatalogs": ["docs/FEATURE-GOALS.md", "docs/SCREEN-GOALS.md"],
+  "validations": [
+    {
+      "id": "VAL-PREFLIGHT",
+      "command": "pnpm preflight -- --mode verify --plan PLAN-001"
+    },
+    { "id": "VAL-FAST", "command": "pnpm verify:fast -- --plan PLAN-001" },
+    { "id": "VAL-FULL", "command": "pnpm verify:full -- --plan PLAN-001" },
+    { "id": "VAL-UNIT", "command": "pnpm test:unit" },
+    { "id": "VAL-INTEGRATION", "command": "pnpm test:integration" },
+    { "id": "VAL-BUILD", "command": "pnpm build:harness" },
+    { "id": "VAL-SKILLS", "command": "pnpm validate:skills" },
+    { "id": "VAL-SCOPE", "command": "pnpm validate:scope -- --plan PLAN-001" },
+    { "id": "VAL-SECRETS", "command": "pnpm validate:secrets" },
+    { "id": "VAL-REQUIREMENTS", "command": "pnpm validate:requirements" },
+    {
+      "id": "VAL-EVIDENCE",
+      "command": "pnpm validate:evidence -- --plan PLAN-001"
+    },
+    { "id": "VAL-CI", "command": "pnpm validate:ci" }
+  ],
+  "requirements": [
+    {
+      "id": "HARNESS-REQ-001",
+      "source": "docs/HARNESS.md#harness-req-001-no-orphan-implementation",
+      "goalIds": ["NAV-FEATURE-023"],
+      "implementationGlobs": [
+        ".agents/**",
+        ".codex/**",
+        "requirements/**",
+        "scripts/**",
+        "tests/harness/**",
+        "AGENTS.md",
+        "README.md"
+      ],
+      "validationIds": ["VAL-UNIT", "VAL-REQUIREMENTS", "VAL-SKILLS"],
+      "validationGlobs": [
+        "scripts/validate-requirements.mjs",
+        "tests/harness/unit/requirements.test.ts",
+        "tests/harness/unit/skills-agents-hooks.test.ts"
+      ]
+    },
+    {
+      "id": "HARNESS-REQ-002",
+      "source": "docs/HARNESS.md#harness-req-002-no-pretend-validation",
+      "goalIds": ["NAV-FEATURE-023"],
+      "implementationGlobs": [
+        "docs/evidence/**",
+        "scripts/lib/evidence.ts",
+        "scripts/*evidence-pack.mjs"
+      ],
+      "validationIds": ["VAL-EVIDENCE", "VAL-UNIT", "VAL-INTEGRATION"],
+      "validationGlobs": [
+        "tests/harness/unit/evidence.test.ts",
+        "tests/harness/integration/evidence-cli.test.ts"
+      ]
+    },
+    {
+      "id": "HARNESS-REQ-003",
+      "source": "docs/HARNESS.md#harness-req-003-no-duplicated-authority",
+      "goalIds": ["NAV-FEATURE-023"],
+      "implementationGlobs": ["docs/**", ".agents/skills/**/references/**"],
+      "validationIds": ["VAL-REQUIREMENTS", "VAL-SCOPE"],
+      "validationGlobs": ["tests/harness/unit/plans-scope.test.ts"]
+    },
+    {
+      "id": "HARNESS-VER-001",
+      "source": "docs/HARNESS.md#harness-ver-001-fast-lane",
+      "goalIds": ["NAV-FEATURE-023"],
+      "implementationGlobs": [
+        "package.json",
+        "eslint.config.mjs",
+        "tsconfig.json",
+        "vitest.config.ts",
+        "scripts/**",
+        "tests/harness/unit/**"
+      ],
+      "validationIds": ["VAL-FAST", "VAL-UNIT"],
+      "validationGlobs": [
+        "scripts/verify.mjs",
+        "tests/harness/unit/runner.test.ts"
+      ]
+    },
+    {
+      "id": "HARNESS-VER-002",
+      "source": "docs/HARNESS.md#harness-ver-002-full-lane",
+      "goalIds": ["NAV-FEATURE-023"],
+      "implementationGlobs": [
+        "tsconfig.build.json",
+        "scripts/lib/**",
+        "tests/harness/integration/**"
+      ],
+      "validationIds": ["VAL-FULL", "VAL-INTEGRATION", "VAL-BUILD"],
+      "validationGlobs": ["tests/harness/integration/**", "tsconfig.build.json"]
+    },
+    {
+      "id": "HARNESS-VER-004",
+      "source": "docs/HARNESS.md#harness-ver-004-zero-spend-ci",
+      "goalIds": ["NAV-FEATURE-023"],
+      "implementationGlobs": [
+        ".github/workflows/verify.yml",
+        ".gitattributes",
+        ".gitignore",
+        ".npmrc",
+        ".prettierignore",
+        "package.json",
+        "pnpm-lock.yaml",
+        "scripts/lib/ci.ts",
+        "scripts/validate-ci.mjs"
+      ],
+      "validationIds": ["VAL-CI", "VAL-FULL"],
+      "validationGlobs": [
+        "tests/harness/unit/ci.test.ts",
+        ".github/workflows/verify.yml"
+      ]
+    }
+  ]
+}

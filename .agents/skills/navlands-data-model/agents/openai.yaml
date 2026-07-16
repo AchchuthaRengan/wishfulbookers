@@ -1,0 +1,4 @@
+interface:
+  display_name: "Navlands Data Model"
+  short_description: "Govern Navlands schemas, lineage, and RLS"
+  default_prompt: "Use $navlands-data-model to plan a safe Navlands schema and RLS change."

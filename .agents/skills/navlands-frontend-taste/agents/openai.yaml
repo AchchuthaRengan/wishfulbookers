@@ -1,0 +1,4 @@
+interface:
+  display_name: "Navlands Frontend Taste"
+  short_description: "Shape distinctive accessible Navlands screens"
+  default_prompt: "Use $navlands-frontend-taste to review a Navlands screen against its visual and accessibility goals."

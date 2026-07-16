@@ -1,0 +1,59 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume|clear|compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/.codex/hooks/session-start.mjs\"",
+            "commandWindows": "powershell -NoProfile -Command \"$r=(git rev-parse --show-toplevel); node (Join-Path $r '.codex/hooks/session-start.mjs')\"",
+            "timeout": 30,
+            "statusMessage": "Checking Navlands prerequisites"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/.codex/hooks/subagent-start.mjs\"",
+            "commandWindows": "powershell -NoProfile -Command \"$r=(git rev-parse --show-toplevel); node (Join-Path $r '.codex/hooks/subagent-start.mjs')\"",
+            "timeout": 10,
+            "statusMessage": "Loading scoped Navlands role context"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|shell_command|apply_patch|Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/.codex/hooks/post-tool-use.mjs\"",
+            "commandWindows": "powershell -NoProfile -Command \"$r=(git rev-parse --show-toplevel); node (Join-Path $r '.codex/hooks/post-tool-use.mjs')\"",
+            "timeout": 30,
+            "statusMessage": "Checking Navlands scope and secret safety"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$(git rev-parse --show-toplevel)/.codex/hooks/stop.mjs\"",
+            "commandWindows": "powershell -NoProfile -Command \"$r=(git rev-parse --show-toplevel); node (Join-Path $r '.codex/hooks/stop.mjs')\"",
+            "timeout": 30,
+            "statusMessage": "Checking durable Navlands completion evidence"
+          }
+        ]
+      }
+    ]
+  }
+}

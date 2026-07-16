@@ -1,0 +1,19 @@
+COMMAND: "pnpm" "test"
+STARTED_AT_UTC: 2026-07-16T07:28:09.650Z
+STDOUT:
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  13 passed (13)
+      Tests  55 passed (55)
+   Start at  12:58:10
+   Duration  28.35s (transform 552ms, setup 0ms, import 1.63s, tests 55.29s, environment 2ms)
+
+
+STDERR:
+$ vitest run
+
+EXIT_CODE: 0
+DURATION_MS: 29398
+REDACTIONS: NONE

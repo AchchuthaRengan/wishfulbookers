@@ -1,0 +1,12 @@
+COMMAND: "pnpm" "format:check"
+STARTED_AT_UTC: 2026-07-16T07:33:27.691Z
+STDOUT:
+Checking formatting...
+All matched files use Prettier code style!
+
+STDERR:
+$ prettier --check .
+
+EXIT_CODE: 0
+DURATION_MS: 1687
+REDACTIONS: NONE

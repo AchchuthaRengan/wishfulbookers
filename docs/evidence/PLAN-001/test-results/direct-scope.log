@@ -1,0 +1,11 @@
+COMMAND: "pnpm" "validate:scope" "--" "--plan" "PLAN-001"
+STARTED_AT_UTC: 2026-07-16T07:30:00.333Z
+STDOUT:
+scope: PASS
+
+STDERR:
+$ node scripts/validate-scope.mjs "--" "--plan" "PLAN-001"
+
+EXIT_CODE: 0
+DURATION_MS: 1939
+REDACTIONS: NONE

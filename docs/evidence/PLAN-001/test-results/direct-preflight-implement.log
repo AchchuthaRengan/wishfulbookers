@@ -1,0 +1,20 @@
+COMMAND: "pnpm" "preflight" "--" "--mode" "implement" "--plan" "PLAN-001"
+STARTED_AT_UTC: 2026-07-16T07:29:44.910Z
+STDOUT:
+Preflight: READY_TO_IMPLEMENT
+PASS repository-root: Repository root is established.
+PASS git: Git state is readable.
+PASS control-documents: Required control documents exist.
+PASS node: Node 24 runtime is compatible.
+PASS package-manager: Direct pnpm@11.9.0 is active and pinned.
+PASS single-active-plan: Exactly one plan is active.
+PASS selected-plan: Requested plan is active.
+PASS scope-sidecar: Plan scope sidecar exists.
+PASS plan-approval: Plan status permits the requested work.
+
+STDERR:
+$ node scripts/preflight.mjs "--" "--mode" "implement" "--plan" "PLAN-001"
+
+EXIT_CODE: 0
+DURATION_MS: 1429
+REDACTIONS: NONE

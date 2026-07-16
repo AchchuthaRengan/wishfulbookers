@@ -1,0 +1,4 @@
+interface:
+  display_name: "Navlands Security"
+  short_description: "Threat-model Navlands trust boundaries safely"
+  default_prompt: "Use $navlands-security to review a Navlands change for trust-boundary risks."

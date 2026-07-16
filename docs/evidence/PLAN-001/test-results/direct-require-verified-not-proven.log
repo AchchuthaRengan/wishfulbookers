@@ -1,0 +1,13 @@
+COMMAND: "pnpm" "validate:evidence" "--" "--plan" "PLAN-001" "--require-verified"
+STARTED_AT_UTC: 2026-07-16T07:30:50.904Z
+STDOUT:
+[ELIFECYCLE] Command failed with exit code 1.
+
+STDERR:
+$ node scripts/validate-evidence-pack.mjs "--" "--plan" "PLAN-001" "--require-verified"
+evidence: FAIL
+- EVIDENCE_VERIFIED_REQUIRED: Completion requires a complete VERIFIED evidence pack.
+
+EXIT_CODE: 1
+DURATION_MS: 1706
+REDACTIONS: NONE

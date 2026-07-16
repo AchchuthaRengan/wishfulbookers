@@ -1,0 +1,7 @@
+node_modules/
+dist-harness/
+coverage/
+docs/*.md
+AGENTS.md
+pnpm-lock.yaml
+docs/evidence/PLAN-001/test-results/independent-verifier-round-*.md

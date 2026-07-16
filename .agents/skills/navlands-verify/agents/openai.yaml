@@ -1,0 +1,4 @@
+interface:
+  display_name: "Navlands Verify"
+  short_description: "Independently verify Navlands implementation"
+  default_prompt: "Use $navlands-verify to independently verify an approved Navlands plan and its evidence."
