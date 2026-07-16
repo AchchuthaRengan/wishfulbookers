@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "planId": "PLAN-001",
+  "commit": "UNSET",
+  "requirements": [
+    {
+      "requirementId": "HARNESS-REQ-001",
+      "goalIds": ["NAV-FEATURE-023"],
+      "source": "docs/HARNESS.md#harness-req-001-no-orphan-implementation",
+      "status": "NOT_PROVEN",
+      "verificationIds": [
+        "CMD-001",
+        "CMD-002",
+        "CMD-003",
+        "CMD-004",
+        "CMD-005",
+        "CMD-006",
+        "CMD-013",
+        "CMD-018",
+        "CMD-019"
+      ],
+      "evidencePaths": [
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-plan.log",
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-playground.log",
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-frontend-taste.log",
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-data-model.log",
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-security.log",
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-verify.log",
+        "docs/evidence/PLAN-001/test-results/direct-unit.log",
+        "docs/evidence/PLAN-001/test-results/direct-verify-full.log",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
+      ],
+      "notes": "Round 5 independently passed this requirement locally; the pack remains NOT_PROVEN pending hosted CI and final closure."
+    },
+    {
+      "requirementId": "HARNESS-REQ-002",
+      "goalIds": ["NAV-FEATURE-023"],
+      "source": "docs/HARNESS.md#harness-req-002-no-pretend-validation",
+      "status": "NOT_PROVEN",
+      "verificationIds": [
+        "CMD-013",
+        "CMD-014",
+        "CMD-018",
+        "CMD-019",
+        "CMD-020",
+        "CMD-023",
+        "CMD-024"
+      ],
+      "evidencePaths": [
+        "docs/evidence/PLAN-001/test-results/direct-unit.log",
+        "docs/evidence/PLAN-001/test-results/direct-integration.log",
+        "docs/evidence/PLAN-001/test-results/direct-verify-fast.log",
+        "docs/evidence/PLAN-001/test-results/direct-verify-full.log",
+        "docs/evidence/PLAN-001/test-results/direct-evidence.log",
+        "docs/evidence/PLAN-001/test-results/stop-hook-regression-red.log",
+        "docs/evidence/PLAN-001/test-results/stop-hook-regression-green.log",
+        "docs/evidence/PLAN-001/test-results/direct-require-verified-not-proven.log",
+        "docs/evidence/PLAN-001/test-results/direct-validate-hooks.log",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
+      ],
+      "notes": "Round 5 independently passed the Stop and evidence gates locally; the pack remains NOT_PROVEN pending hosted CI and final closure."
+    },
+    {
+      "requirementId": "HARNESS-REQ-003",
+      "goalIds": ["NAV-FEATURE-023"],
+      "source": "docs/HARNESS.md#harness-req-003-no-duplicated-authority",
+      "status": "NOT_PROVEN",
+      "verificationIds": [
+        "CMD-018",
+        "CMD-019",
+        "CMD-022",
+        "CMD-025",
+        "CMD-026"
+      ],
+      "evidencePaths": [
+        "docs/evidence/PLAN-001/test-results/direct-verify-full.log",
+        "docs/evidence/PLAN-001/test-results/direct-scope.log",
+        "docs/evidence/PLAN-001/test-results/staged-index-regression-green.log",
+        "docs/evidence/PLAN-001/test-results/git-cached-diff-check.log",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
+      ],
+      "notes": "Round 5 independently confirmed the authoritative cached-index repair and focused regression locally; hosted CI and final closure remain pending."
+    },
+    {
+      "requirementId": "HARNESS-VER-001",
+      "goalIds": ["NAV-FEATURE-023"],
+      "source": "docs/HARNESS.md#harness-ver-001-fast-lane",
+      "status": "NOT_PROVEN",
+      "verificationIds": ["CMD-018", "CMD-025", "CMD-026"],
+      "evidencePaths": [
+        "docs/evidence/PLAN-001/test-results/direct-verify-fast.log",
+        "docs/evidence/PLAN-001/test-results/staged-index-regression-green.log",
+        "docs/evidence/PLAN-001/test-results/git-cached-diff-check.log",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
+      ],
+      "notes": "Round 5 independently passed the repaired fast lane and staged-index regression locally; hosted CI and final closure remain pending."
+    },
+    {
+      "requirementId": "HARNESS-VER-002",
+      "goalIds": ["NAV-FEATURE-023"],
+      "source": "docs/HARNESS.md#harness-ver-002-full-lane",
+      "status": "NOT_PROVEN",
+      "verificationIds": ["CMD-019", "CMD-025", "CMD-026"],
+      "evidencePaths": [
+        "docs/evidence/PLAN-001/test-results/direct-verify-full.log",
+        "docs/evidence/PLAN-001/test-results/staged-index-regression-green.log",
+        "docs/evidence/PLAN-001/test-results/git-cached-diff-check.log",
+        "docs/evidence/PLAN-001/test-results/hosted-ci-run-29481673124.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
+      ],
+      "notes": "Round 5 independently passed the 55-test baseline locally. The focused hosted-CI repair passes a 56-test writer run but remains NOT_PROVEN pending independent review, hosted rerun, and final closure."
+    },
+    {
+      "requirementId": "HARNESS-VER-004",
+      "goalIds": ["NAV-FEATURE-023"],
+      "source": "docs/HARNESS.md#harness-ver-004-zero-spend-ci",
+      "status": "NOT_PROVEN",
+      "verificationIds": ["CMD-019"],
+      "evidencePaths": [
+        "docs/evidence/PLAN-001/test-results/direct-verify-full.log",
+        "docs/evidence/PLAN-001/test-results/hosted-ci-run-29481673124.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-1.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-2.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-3.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-4.md",
+        "docs/evidence/PLAN-001/test-results/independent-verifier-round-5.md"
+      ],
+      "notes": "Hosted run 29481673124 failed before the full lane because the pnpm shim was unavailable; the focused repair remains NOT_PROVEN pending independent review and rerun."
+    }
+  ]
+}

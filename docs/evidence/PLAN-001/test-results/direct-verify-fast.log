@@ -1,0 +1,65 @@
+COMMAND: "pnpm" "verify:fast" "--" "--plan" "PLAN-001"
+STARTED_AT_UTC: 2026-07-16T07:33:56.850Z
+STDOUT:
+
+[fast] format
+Checking formatting...
+All matched files use Prettier code style!
+
+[fast] lint
+
+[fast] typecheck
+
+[fast] unit
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  8 passed (8)
+      Tests  34 passed (34)
+   Start at  13:04:06
+   Duration  1.95s (transform 435ms, setup 0ms, import 1.26s, tests 2.71s, environment 1ms)
+
+
+[fast] skills
+skills: PASS
+
+[fast] agents
+agents: PASS
+
+[fast] hooks
+hooks: PASS
+
+[fast] plans
+plans: PASS
+
+[fast] scope
+scope: PASS
+
+[fast] secrets
+secrets: PASS
+
+[fast] requirements
+requirements: PASS
+
+[fast] evidence
+evidence: PASS
+
+STDERR:
+$ node scripts/verify.mjs fast "--" "--plan" "PLAN-001"
+$ prettier --check .
+$ eslint .
+$ tsc --noEmit -p tsconfig.json
+$ vitest run tests/harness/unit
+$ node scripts/validate-skills.mjs
+$ node scripts/validate-agents.mjs
+$ node scripts/validate-hooks.mjs
+$ node scripts/validate-plans.mjs "--" "--plan" "PLAN-001"
+$ node scripts/validate-scope.mjs "--" "--plan" "PLAN-001"
+$ node scripts/validate-secrets.mjs
+$ node scripts/validate-requirements.mjs
+$ node scripts/validate-evidence-pack.mjs "--" "--plan" "PLAN-001"
+
+EXIT_CODE: 0
+DURATION_MS: 18926
+REDACTIONS: NONE

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Navlands Playground"
+  short_description: "Build the accessible Navlands career map"
+  default_prompt: "Use $navlands-playground to build a scoped Playground slice from approved requirements."

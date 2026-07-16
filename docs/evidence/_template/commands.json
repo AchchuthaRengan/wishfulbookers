@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "planId": "PLAN-NNN",
+  "commit": "UNSET",
+  "environment": "local|ci|preview",
+  "commands": [
+    {
+      "id": "CMD-001",
+      "command": "UNSET",
+      "purpose": "UNSET",
+      "status": "NOT_RUN",
+      "exitCode": null,
+      "durationMs": null,
+      "artifactPaths": []
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+COMMAND: "pnpm" "test:unit"
+STARTED_AT_UTC: 2026-07-16T07:26:56.126Z
+STDOUT:
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  8 passed (8)
+      Tests  34 passed (34)
+   Start at  12:56:57
+   Duration  1.83s (transform 411ms, setup 0ms, import 1.26s, tests 2.55s, environment 1ms)
+
+
+STDERR:
+$ vitest run tests/harness/unit
+
+EXIT_CODE: 0
+DURATION_MS: 2882
+REDACTIONS: NONE

@@ -1,0 +1,11 @@
+COMMAND: "pnpm" "validate:hooks"
+STARTED_AT_UTC: 2026-07-16T07:30:00.333Z
+STDOUT:
+hooks: PASS
+
+STDERR:
+$ node scripts/validate-hooks.mjs
+
+EXIT_CODE: 0
+DURATION_MS: 880
+REDACTIONS: NONE

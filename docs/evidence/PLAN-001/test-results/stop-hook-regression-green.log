@@ -1,0 +1,18 @@
+COMMAND: "pnpm" "exec" "vitest" "run" "tests/harness/integration/stop-hook-evidence.test.ts" "tests/harness/integration/evidence-cli.test.ts" "tests/harness/unit/evidence.test.ts" "tests/harness/unit/skills-agents-hooks.test.ts"
+STARTED_AT_UTC: 2026-07-16T07:30:00.349Z
+STDOUT:
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  4 passed (4)
+      Tests  19 passed (19)
+   Start at  13:00:01
+   Duration  31.14s (transform 350ms, setup 0ms, import 1.02s, tests 34.16s, environment 0ms)
+
+
+STDERR:
+
+EXIT_CODE: 0
+DURATION_MS: 32477
+REDACTIONS: NONE

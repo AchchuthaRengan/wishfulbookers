@@ -1,0 +1,10 @@
+COMMAND: "pnpm" "build:harness"
+STARTED_AT_UTC: 2026-07-16T07:28:46.071Z
+STDOUT:
+
+STDERR:
+$ tsc -p tsconfig.build.json
+
+EXIT_CODE: 0
+DURATION_MS: 1873
+REDACTIONS: NONE

@@ -1,0 +1,84 @@
+COMMAND: "pnpm" "verify:full" "--" "--plan" "PLAN-001"
+STARTED_AT_UTC: 2026-07-16T07:34:25.759Z
+STDOUT:
+
+[full] format
+Checking formatting...
+All matched files use Prettier code style!
+
+[full] lint
+
+[full] typecheck
+
+[full] unit
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  8 passed (8)
+      Tests  34 passed (34)
+   Start at  13:04:35
+   Duration  2.02s (transform 448ms, setup 0ms, import 1.50s, tests 2.89s, environment 5ms)
+
+
+[full] skills
+skills: PASS
+
+[full] agents
+agents: PASS
+
+[full] hooks
+hooks: PASS
+
+[full] plans
+plans: PASS
+
+[full] scope
+scope: PASS
+
+[full] secrets
+secrets: PASS
+
+[full] requirements
+requirements: PASS
+
+[full] evidence
+evidence: PASS
+
+[full] integration
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  5 passed (5)
+      Tests  21 passed (21)
+   Start at  13:04:45
+   Duration  32.10s (transform 266ms, setup 0ms, import 646ms, tests 48.56s, environment 1ms)
+
+
+[full] build-harness
+
+[full] ci
+ci: PASS
+
+STDERR:
+$ node scripts/verify.mjs full "--" "--plan" "PLAN-001"
+$ prettier --check .
+$ eslint .
+$ tsc --noEmit -p tsconfig.json
+$ vitest run tests/harness/unit
+$ node scripts/validate-skills.mjs
+$ node scripts/validate-agents.mjs
+$ node scripts/validate-hooks.mjs
+$ node scripts/validate-plans.mjs "--" "--plan" "PLAN-001"
+$ node scripts/validate-scope.mjs "--" "--plan" "PLAN-001"
+$ node scripts/validate-secrets.mjs
+$ node scripts/validate-requirements.mjs
+$ node scripts/validate-evidence-pack.mjs "--" "--plan" "PLAN-001"
+$ vitest run tests/harness/integration
+$ tsc -p tsconfig.build.json
+$ node scripts/validate-ci.mjs
+
+EXIT_CODE: 0
+DURATION_MS: 54610
+REDACTIONS: NONE

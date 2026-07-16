@@ -1,0 +1,31 @@
+Navlands PLAN-001 writer broad validation (sanitized)
+Date: 2026-07-16
+Environment: local Windows, Node v24.18.0, Corepack pnpm v11.7.0
+
+pnpm test
+Result: PASS — 11 files, 36 tests
+
+pnpm verify:fast -- --plan PLAN-001
+Result: PASS — formatting, lint, strict types, 31 unit tests, skills, agents,
+hooks, plans, scope, secrets, requirements, and evidence
+Duration: 20.1 seconds
+
+pnpm verify:full -- --plan PLAN-001
+Result: PASS — complete fast lane plus 5 integration tests, harness compilation,
+and zero-spend CI policy validation
+Duration: 27.1 seconds
+
+Product production build: NOT_APPLICABLE
+Database/RLS: NOT_APPLICABLE
+Product accessibility/visual lane: NOT_APPLICABLE
+AI/data/provider evaluation: NOT_APPLICABLE
+
+These are writer results. Independent review and hosted GitHub Actions remain
+unproven. No output contained secret values or private production data.
+
+AUDIT CORRECTION AFTER INDEPENDENT VERIFICATION ROUND 1
+The commands above were invoked through Corepack-selected pnpm 11.7.0. They did
+not prove the documented direct-pnpm workflow: direct pnpm was 11.9.0 and failed
+the former engine constraint. The repository contract has since been corrected
+to direct pnpm 11.9.0. Repaired raw command outputs are stored as separate
+round-1 artifacts; this original writer record is retained unchanged above.

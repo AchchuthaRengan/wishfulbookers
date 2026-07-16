@@ -1,0 +1,47 @@
+{
+  "name": "navlands",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.9.0",
+  "engines": {
+    "node": ">=24 <25",
+    "pnpm": "11.9.0"
+  },
+  "scripts": {
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "build:harness": "tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "test:unit": "vitest run tests/harness/unit",
+    "test:integration": "vitest run tests/harness/integration",
+    "preflight": "node scripts/preflight.mjs",
+    "validate:skills": "node scripts/validate-skills.mjs",
+    "validate:agents": "node scripts/validate-agents.mjs",
+    "validate:hooks": "node scripts/validate-hooks.mjs",
+    "validate:plans": "node scripts/validate-plans.mjs",
+    "validate:scope": "node scripts/validate-scope.mjs",
+    "validate:secrets": "node scripts/validate-secrets.mjs",
+    "validate:requirements": "node scripts/validate-requirements.mjs",
+    "validate:evidence": "node scripts/validate-evidence-pack.mjs",
+    "validate:ci": "node scripts/validate-ci.mjs",
+    "evidence:create": "node scripts/create-evidence-pack.mjs",
+    "verify:fast": "node scripts/verify.mjs fast",
+    "verify:full": "node scripts/verify.mjs full"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.2",
+    "@types/node": "24.10.1",
+    "ajv": "8.20.0",
+    "eslint": "9.39.2",
+    "fast-glob": "3.3.3",
+    "prettier": "3.9.5",
+    "smol-toml": "1.7.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.64.0",
+    "vitest": "4.1.10",
+    "yaml": "2.9.0"
+  }
+}

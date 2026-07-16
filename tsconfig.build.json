@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "allowImportingTsExtensions": true,
+    "declaration": true,
+    "emitDeclarationOnly": false,
+    "noEmit": false,
+    "outDir": "dist-harness",
+    "rewriteRelativeImportExtensions": true,
+    "rootDir": "scripts/lib",
+    "types": ["node"]
+  },
+  "include": ["scripts/lib/**/*.ts"]
+}

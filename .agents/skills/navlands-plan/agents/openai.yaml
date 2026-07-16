@@ -1,0 +1,4 @@
+interface:
+  display_name: "Navlands Plan"
+  short_description: "Plan approved Navlands implementation work"
+  default_prompt: "Use $navlands-plan to prepare an approved Navlands implementation plan."

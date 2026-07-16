@@ -1,0 +1,19 @@
+COMMAND: "pnpm" "test:integration"
+STARTED_AT_UTC: 2026-07-16T07:27:03.396Z
+STDOUT:
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  5 passed (5)
+      Tests  21 passed (21)
+   Start at  12:57:04
+   Duration  26.55s (transform 251ms, setup 0ms, import 661ms, tests 43.01s, environment 1ms)
+
+
+STDERR:
+$ vitest run tests/harness/integration
+
+EXIT_CODE: 0
+DURATION_MS: 27590
+REDACTIONS: NONE

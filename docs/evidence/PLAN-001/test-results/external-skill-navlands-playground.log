@@ -1,0 +1,10 @@
+COMMAND: "python" "C:/Users/achre/.codex/skills/.system/skill-creator/scripts/quick_validate.py" ".agents/skills/navlands-playground"
+STARTED_AT_UTC: 2026-07-16T07:29:12.018Z
+STDOUT:
+Skill is valid!
+
+STDERR:
+
+EXIT_CODE: 0
+DURATION_MS: 129
+REDACTIONS: NONE

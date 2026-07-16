@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "planId": "PLAN-NNN",
+  "commit": "UNSET",
+  "requirements": [
+    {
+      "requirementId": "UNSET",
+      "goalIds": [],
+      "source": "UNSET",
+      "status": "NOT_PROVEN",
+      "verificationIds": [],
+      "evidencePaths": [],
+      "notes": ""
+    }
+  ]
+}

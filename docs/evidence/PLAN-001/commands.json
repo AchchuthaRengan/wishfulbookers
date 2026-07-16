@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "planId": "PLAN-001",
+  "commit": "UNSET",
+  "environment": "local",
+  "commands": [
+    {
+      "id": "CMD-001",
+      "command": "python C:/Users/achre/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/navlands-plan",
+      "purpose": "Run the external system validator for navlands-plan.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 126,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-plan.log"
+      ]
+    },
+    {
+      "id": "CMD-002",
+      "command": "python C:/Users/achre/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/navlands-playground",
+      "purpose": "Run the external system validator for navlands-playground.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 129,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-playground.log"
+      ]
+    },
+    {
+      "id": "CMD-003",
+      "command": "python C:/Users/achre/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/navlands-frontend-taste",
+      "purpose": "Run the external system validator for navlands-frontend-taste.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 126,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-frontend-taste.log"
+      ]
+    },
+    {
+      "id": "CMD-004",
+      "command": "python C:/Users/achre/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/navlands-data-model",
+      "purpose": "Run the external system validator for navlands-data-model.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 131,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-data-model.log"
+      ]
+    },
+    {
+      "id": "CMD-005",
+      "command": "python C:/Users/achre/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/navlands-security",
+      "purpose": "Run the external system validator for navlands-security.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 171,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-security.log"
+      ]
+    },
+    {
+      "id": "CMD-006",
+      "command": "python C:/Users/achre/.codex/skills/.system/skill-creator/scripts/quick_validate.py .agents/skills/navlands-verify",
+      "purpose": "Run the external system validator for navlands-verify.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 128,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/external-skill-navlands-verify.log"
+      ]
+    },
+    {
+      "id": "CMD-007",
+      "command": "pnpm --version",
+      "purpose": "Prove direct pnpm 11.9.0 is active.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 542,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-pnpm-version.log"
+      ]
+    },
+    {
+      "id": "CMD-008",
+      "command": "pnpm install --frozen-lockfile",
+      "purpose": "Prove the exact lockfile installs without resolution changes.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 558,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-install-frozen.log"
+      ]
+    },
+    {
+      "id": "CMD-009",
+      "command": "pnpm format",
+      "purpose": "Apply the repository formatter before deterministic checks.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1651,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-format-write.log"
+      ]
+    },
+    {
+      "id": "CMD-010",
+      "command": "pnpm format:check",
+      "purpose": "Prove deterministic formatting.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1687,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-format-check.log"
+      ]
+    },
+    {
+      "id": "CMD-011",
+      "command": "pnpm lint",
+      "purpose": "Run strict repository lint rules.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 5726,
+      "artifactPaths": ["docs/evidence/PLAN-001/test-results/direct-lint.log"]
+    },
+    {
+      "id": "CMD-012",
+      "command": "pnpm typecheck",
+      "purpose": "Run strict TypeScript validation.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 2597,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-typecheck.log"
+      ]
+    },
+    {
+      "id": "CMD-013",
+      "command": "pnpm test:unit",
+      "purpose": "Exercise validator positive, negative, boundary, and fail-fast contracts.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 2882,
+      "artifactPaths": ["docs/evidence/PLAN-001/test-results/direct-unit.log"]
+    },
+    {
+      "id": "CMD-014",
+      "command": "pnpm test:integration",
+      "purpose": "Exercise evidence CLIs, hook payloads, and repository adapters.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 27590,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-integration.log"
+      ]
+    },
+    {
+      "id": "CMD-015",
+      "command": "pnpm build:harness",
+      "purpose": "Compile only the harness libraries.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1873,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-build-harness.log"
+      ]
+    },
+    {
+      "id": "CMD-016",
+      "command": "pnpm test",
+      "purpose": "Run the combined harness test suite.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 29398,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-test-all.log"
+      ]
+    },
+    {
+      "id": "CMD-017",
+      "command": "pnpm preflight -- --mode implement --plan PLAN-001",
+      "purpose": "Prove the approved plan is ready for scoped implementation.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1429,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-preflight-implement.log"
+      ]
+    },
+    {
+      "id": "CMD-018",
+      "command": "pnpm verify:fast -- --plan PLAN-001",
+      "purpose": "Run the deterministic fast lane.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 18926,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-verify-fast.log"
+      ]
+    },
+    {
+      "id": "CMD-019",
+      "command": "pnpm verify:full -- --plan PLAN-001",
+      "purpose": "Run the deterministic full harness lane, including zero-spend CI policy validation.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 54610,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-verify-full.log"
+      ]
+    },
+    {
+      "id": "CMD-020",
+      "command": "pnpm validate:evidence -- --plan PLAN-001",
+      "purpose": "Validate the Plan 001 evidence structure and claim rules.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 888,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-evidence.log"
+      ]
+    },
+    {
+      "id": "CMD-021",
+      "command": "git diff --check",
+      "purpose": "Check the working diff for whitespace errors.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 70,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/git-diff-check.log"
+      ]
+    },
+    {
+      "id": "CMD-022",
+      "command": "pnpm validate:scope -- --plan PLAN-001",
+      "purpose": "Prove only Plan 001 allowed paths changed relative to its base ref.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1939,
+      "artifactPaths": ["docs/evidence/PLAN-001/test-results/direct-scope.log"]
+    },
+    {
+      "id": "CMD-023",
+      "command": "pnpm exec vitest run tests/harness/integration/stop-hook-evidence.test.ts tests/harness/integration/evidence-cli.test.ts tests/harness/unit/evidence.test.ts tests/harness/unit/skills-agents-hooks.test.ts",
+      "purpose": "Prove the Stop-hook completion gate and authoritative VERIFIED evidence mode red-to-green regression.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 32477,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/stop-hook-regression-green.log"
+      ]
+    },
+    {
+      "id": "CMD-024",
+      "command": "pnpm validate:hooks",
+      "purpose": "Validate native hook configuration and the authoritative Stop-hook evidence integration.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 880,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-validate-hooks.log"
+      ]
+    },
+    {
+      "id": "CMD-025",
+      "command": "pnpm exec vitest run tests/harness/integration/scope-git.test.ts tests/harness/unit/plans-scope.test.ts",
+      "purpose": "Prove staged-index, intended-tree, untracked, Markdown, and plan-scope regressions.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 6999,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/staged-index-regression-green.log"
+      ]
+    },
+    {
+      "id": "CMD-026",
+      "command": "git diff --cached --check",
+      "purpose": "Check the authoritative staged index for whitespace errors.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 81,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/git-cached-diff-check.log"
+      ]
+    },
+    {
+      "id": "CMD-027",
+      "command": "pnpm preflight -- --mode verify --plan PLAN-001",
+      "purpose": "Prove the approved plan and evidence pack are ready for verification.",
+      "status": "PASS",
+      "exitCode": 0,
+      "durationMs": 1444,
+      "artifactPaths": [
+        "docs/evidence/PLAN-001/test-results/direct-preflight-verify.log"
+      ]
+    }
+  ]
+}

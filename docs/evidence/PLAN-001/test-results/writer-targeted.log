@@ -1,0 +1,43 @@
+Navlands PLAN-001 writer-targeted validation (sanitized)
+Date: 2026-07-16
+Environment: local Windows, Node v24.18.0, Corepack pnpm v11.7.0
+
+External skill validator
+Result: PASS — 6 of 6 skills valid
+
+pnpm install --frozen-lockfile
+Result: PASS — already up to date with pnpm v11.7.0
+
+pnpm format:check
+Result: PASS — all matched files use Prettier code style
+
+pnpm lint
+Result: PASS — exit 0
+
+pnpm typecheck
+Result: PASS — exit 0
+
+pnpm test:unit
+Result: PASS — 8 files, 31 tests
+
+pnpm test:integration
+Result: PASS — 3 files, 5 tests
+
+pnpm build:harness
+Result: PASS — exit 0
+
+Direct validators
+Result: PASS — skills, agents, hooks, plans, scope, secrets, requirements,
+evidence, and CI policy
+
+Preflight implement PLAN-001
+Result: READY_TO_IMPLEMENT — schemaVersion 1, no issues
+
+No output contained secret values or private production data.
+
+AUDIT CORRECTION AFTER INDEPENDENT VERIFICATION ROUND 1
+The commands above were invoked through Corepack-selected pnpm 11.7.0. They did
+not prove the documented direct-pnpm workflow: direct pnpm was 11.9.0 and failed
+the former engine constraint. The repository contract has since been corrected
+to direct pnpm 11.9.0. Repaired raw command outputs are stored as separate
+round-1 artifacts; this original writer record is retained unchanged above.

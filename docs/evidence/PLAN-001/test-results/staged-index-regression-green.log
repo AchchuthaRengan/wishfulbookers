@@ -1,0 +1,18 @@
+COMMAND: "pnpm" "exec" "vitest" "run" "tests/harness/integration/scope-git.test.ts" "tests/harness/unit/plans-scope.test.ts"
+STARTED_AT_UTC: 2026-07-16T07:26:41.401Z
+STDOUT:
+
+ RUN  v4.1.10 D:/Navlands/Code/wishfulbookers
+
+
+ Test Files  2 passed (2)
+      Tests  9 passed (9)
+   Start at  12:56:42
+   Duration  5.94s (transform 114ms, setup 0ms, import 170ms, tests 5.64s, environment 0ms)
+
+
+STDERR:
+
+EXIT_CODE: 0
+DURATION_MS: 6999
+REDACTIONS: NONE
